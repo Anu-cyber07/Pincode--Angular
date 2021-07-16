@@ -4,7 +4,7 @@
     <div class="center">
       <label size="large"position="floating">PIN Code (6 Character):</label>
       <input required minlength="6" name="name" ngModel />&nbsp;
-      <button type="submit">Submit</button>&nbsp;
+      <button type="submit"[disabled]=!form.form.valid>Submit</button>&nbsp;
       <button type="reset" ng-click="reset()">Reset</button>
     </div>
   </div>
